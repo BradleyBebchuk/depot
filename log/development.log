@@ -8696,3 +8696,505 @@ ActionController::RoutingError (No route matches "/images/logo.png" with {:metho
   
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-30 16:21:17) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"vHuoLxk8LaWqZf8hqSUuvuLP0Y4o0KGuy+QBCqcbfBE=", "id"=>"6", "_"=>""}
+  [4;36;1mProduct Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 6) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (4.2ms)
+Rendered store/_cart (6.2ms)
+Completed in 68ms (View: 57, DB: 3) | 200 OK [http://localhost/store/add_to_cart/6]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-30 16:21:18) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"vHuoLxk8LaWqZf8hqSUuvuLP0Y4o0KGuy+QBCqcbfBE=", "id"=>"4", "_"=>""}
+  [4;36;1mProduct Columns (2.5ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 4) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.9ms)
+Rendered store/_cart_item (0.3ms)
+Rendered store/_cart (6.2ms)
+Completed in 20ms (View: 8, DB: 4) | 200 OK [http://localhost/store/add_to_cart/4]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-30 16:21:19) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"vHuoLxk8LaWqZf8hqSUuvuLP0Y4o0KGuy+QBCqcbfBE=", "id"=>"5", "_"=>""}
+  [4;36;1mProduct Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 5) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.3ms)
+Rendered store/_cart_item (1.0ms)
+Rendered store/_cart_item (0.4ms)
+Rendered store/_cart (7.3ms)
+Completed in 21ms (View: 9, DB: 3) | 200 OK [http://localhost/store/add_to_cart/5]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#empty_cart (for 127.0.0.1 at 2010-04-30 16:21:23) [POST]
+  Parameters: {"authenticity_token"=>"vHuoLxk8LaWqZf8hqSUuvuLP0Y4o0KGuy+QBCqcbfBE="}
+Redirected to http://localhost:3000/store
+Completed in 9ms (DB: 1) | 302 Found [http://localhost/store/empty_cart]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-30 16:21:23) [GET]
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.6ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.6ms)
+Completed in 29ms (View: 21, DB: 2) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-30 16:21:23) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-30 16:21:25) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"vHuoLxk8LaWqZf8hqSUuvuLP0Y4o0KGuy+QBCqcbfBE=", "id"=>"4", "_"=>""}
+  [4;36;1mProduct Columns (5.7ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (8.9ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 4) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.8ms)
+Rendered store/_cart (5.9ms)
+Completed in 32ms (View: 8, DB: 15) | 200 OK [http://localhost/store/add_to_cart/4]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-30 16:21:26) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"vHuoLxk8LaWqZf8hqSUuvuLP0Y4o0KGuy+QBCqcbfBE=", "id"=>"8", "_"=>""}
+  [4;36;1mProduct Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 8) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.4ms)
+Rendered store/_cart_item (0.3ms)
+Rendered store/_cart (5.6ms)
+Completed in 19ms (View: 8, DB: 3) | 200 OK [http://localhost/store/add_to_cart/8]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-30 16:21:28) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"vHuoLxk8LaWqZf8hqSUuvuLP0Y4o0KGuy+QBCqcbfBE=", "id"=>"4", "_"=>""}
+  [4;36;1mProduct Columns (2.3ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 4) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.6ms)
+Rendered store/_cart_item (0.4ms)
+Rendered store/_cart (5.9ms)
+Completed in 22ms (View: 8, DB: 3) | 200 OK [http://localhost/store/add_to_cart/4]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-04-30 16:21:31) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"vHuoLxk8LaWqZf8hqSUuvuLP0Y4o0KGuy+QBCqcbfBE=", "id"=>"6", "_"=>""}
+  [4;36;1mProduct Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mProduct Load (1.3ms)[0m   [0mSELECT * FROM `products` WHERE (`products`.`id` = 6) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.3ms)
+Rendered store/_cart_item (0.3ms)
+Rendered store/_cart_item (0.3ms)
+Rendered store/_cart (6.0ms)
+Completed in 20ms (View: 8, DB: 4) | 200 OK [http://localhost/store/add_to_cart/6]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2010-04-30 16:21:32) [POST]
+  Parameters: {"authenticity_token"=>"vHuoLxk8LaWqZf8hqSUuvuLP0Y4o0KGuy+QBCqcbfBE="}
+  [4;36;1mOrder Columns (2.1ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+Rendering template within layouts/store
+Rendering store/checkout
+  [4;35;1mProduct Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart_item (6.4ms)
+Rendered store/_cart_item (0.3ms)
+Rendered store/_cart_item (0.3ms)
+Rendered store/_cart (9.0ms)
+Completed in 34ms (View: 13, DB: 5) | 200 OK [http://localhost/store/checkout]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-30 16:21:32) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2010-04-30 16:22:36) [POST]
+  Parameters: {"commit"=>"Place Order", "order"=>{"name"=>"Jimmy Bobby", "pay_type"=>"check", "address"=>"1800 Taladega Nights Palm Beach Florida  ", "email"=>"JimmyBobby@Raceing.com"}, "authenticity_token"=>"vHuoLxk8LaWqZf8hqSUuvuLP0Y4o0KGuy+QBCqcbfBE="}
+  [4;36;1mOrder Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mLineItem Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `line_items`[0m
+  [4;36;1mProduct Columns (1.3ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mOrder Create (0.2ms)[0m   [0;1mINSERT INTO `orders` (`name`, `pay_type`, `address`, `email`) VALUES('Jimmy Bobby', 'check', '1800 Taladega Nights Palm Beach Florida ', 'JimmyBobby@Raceing.com')[0m
+  [4;35;1mLineItem Create (0.2ms)[0m   [0mINSERT INTO `line_items` (`order_id`, `total_price`, `product_id`, `quantity`) VALUES(2, 1000.0, 4, 2)[0m
+  [4;36;1mLineItem Create (0.1ms)[0m   [0;1mINSERT INTO `line_items` (`order_id`, `total_price`, `product_id`, `quantity`) VALUES(2, 1699.99, 8, 1)[0m
+  [4;35;1mLineItem Create (0.1ms)[0m   [0mINSERT INTO `line_items` (`order_id`, `total_price`, `product_id`, `quantity`) VALUES(2, 112.34, 6, 1)[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mCOMMIT[0m
+Redirected to http://localhost:3000/store
+Completed in 33ms (DB: 7) | 302 Found [http://localhost/store/save_order]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-04-30 16:22:37) [GET]
+  [4;35;1mProduct Load (0.6ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.6ms)
+Completed in 37ms (View: 25, DB: 3) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-04-30 16:22:37) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (26.7ms)[0m   [0mSELECT version FROM schema_migrations[0m
+Migrating to CreateProducts (20100416190133)
+Migrating to AddPrice (20100416193142)
+Migrating to CreateSessions (20100420200249)
+Migrating to CreateOrders (20100430192728)
+Migrating to CreateLineItems (20100430192743)
+Migrating to CreateUsers (20100504184519)
+  [4;36;1mSQL (68.3ms)[0m   [0;1mCREATE TABLE `users` (`id` int(11) DEFAULT NULL auto_increment PRIMARY KEY, `name` varchar(255), `hashed_password` varchar(255), `salt` varchar(255)) ENGINE=InnoDB[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20100504184519')[0m
+  [4;36;1mSQL (0.8ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSHOW TABLES[0m
+  [4;35;1mSQL (50.0ms)[0m   [0mSHOW FIELDS FROM `line_items`[0m
+  [4;36;1mSQL (2.3ms)[0m   [0;1mdescribe `line_items`[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSHOW KEYS FROM `line_items`[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mdescribe `orders`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `orders`[0m
+  [4;35;1mSQL (1.8ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (1.8ms)[0m   [0;1mdescribe `products`[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSHOW KEYS FROM `products`[0m
+  [4;36;1mSQL (22.1ms)[0m   [0;1mSHOW FIELDS FROM `sessions`[0m
+  [4;35;1mSQL (2.4ms)[0m   [0mdescribe `sessions`[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSHOW KEYS FROM `sessions`[0m
+  [4;35;1mSQL (1.9ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mdescribe `users`[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSHOW KEYS FROM `users`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-05-04 13:54:06) [GET]
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;35;1mProduct Columns (2.5ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47products47index46html46erb at /Users/Bradley/work/depot/app/views/products/index.html.erb:14)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47products47index46html46erb at /Users/Bradley/work/depot/app/views/products/index.html.erb:14)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47products47index46html46erb at /Users/Bradley/work/depot/app/views/products/index.html.erb:14)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47products47index46html46erb at /Users/Bradley/work/depot/app/views/products/index.html.erb:14)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47products47index46html46erb at /Users/Bradley/work/depot/app/views/products/index.html.erb:14)
+Completed in 246ms (View: 200, DB: 5) | 200 OK [http://localhost/products]
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing ProductsController#new (for 127.0.0.1 at 2010-05-04 13:54:26) [GET]
+  [4;36;1mProduct Columns (1.5ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendering template within layouts/products
+Rendering products/new
+Completed in 16ms (View: 10, DB: 2) | 200 OK [http://localhost/products/new]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing ProductsController#index (for 127.0.0.1 at 2010-05-04 13:54:32) [GET]
+  [4;35;1mProduct Load (0.3ms)[0m   [0mSELECT * FROM `products` [0m
+Rendering template within layouts/products
+Rendering products/index
+  [4;36;1mProduct Columns (1.8ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47products47index46html46erb at /Users/Bradley/work/depot/app/views/products/index.html.erb:14)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47products47index46html46erb at /Users/Bradley/work/depot/app/views/products/index.html.erb:14)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47products47index46html46erb at /Users/Bradley/work/depot/app/views/products/index.html.erb:14)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47products47index46html46erb at /Users/Bradley/work/depot/app/views/products/index.html.erb:14)
+DEPRECATION WARNING: truncate takes an option hash instead of separate length and omission arguments. (called from _run_erb_app47views47products47index46html46erb at /Users/Bradley/work/depot/app/views/products/index.html.erb:14)
+Completed in 26ms (View: 19, DB: 3) | 200 OK [http://localhost/products]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-05-04 13:54:42) [GET]
+  [4;35;1mProduct Load (0.4ms)[0m   [0mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;36;1mProduct Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (23.3ms)
+Completed in 126ms (View: 103, DB: 3) | 200 OK [http://localhost/store]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (2.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 13:54:44) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-05-04 13:54:48) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"Darrb2RgkZVZ2busnWGs7dN4GVN3cQd3MZRcPB14mkw=", "id"=>"6", "_"=>""}
+  [4;35;1mProduct Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.5ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 6) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (20.3ms)
+Rendered store/_cart (29.2ms)
+Completed in 70ms (View: 59, DB: 3) | 200 OK [http://localhost/store/add_to_cart/6]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-05-04 13:54:50) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"Darrb2RgkZVZ2busnWGs7dN4GVN3cQd3MZRcPB14mkw=", "id"=>"4", "_"=>""}
+  [4;35;1mProduct Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 4) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.5ms)
+Rendered store/_cart_item (0.3ms)
+Rendered store/_cart (5.8ms)
+Completed in 19ms (View: 8, DB: 3) | 200 OK [http://localhost/store/add_to_cart/4]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-05-04 13:54:55) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"Darrb2RgkZVZ2busnWGs7dN4GVN3cQd3MZRcPB14mkw=", "id"=>"5", "_"=>""}
+  [4;35;1mProduct Columns (296.4ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 5) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (5.0ms)
+Rendered store/_cart_item (0.5ms)
+Rendered store/_cart_item (0.4ms)
+Rendered store/_cart (8.5ms)
+Completed in 321ms (View: 11, DB: 298) | 200 OK [http://localhost/store/add_to_cart/5]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#add_to_cart (for 127.0.0.1 at 2010-05-04 13:54:59) [POST]
+  Parameters: {"commit"=>"Add to Cart", "authenticity_token"=>"Darrb2RgkZVZ2busnWGs7dN4GVN3cQd3MZRcPB14mkw=", "id"=>"6", "_"=>""}
+  [4;35;1mProduct Columns (1.5ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mProduct Load (0.6ms)[0m   [0;1mSELECT * FROM `products` WHERE (`products`.`id` = 6) [0m
+Rendering store/add_to_cart
+Rendered store/_cart_item (3.4ms)
+Rendered store/_cart_item (0.3ms)
+Rendered store/_cart_item (0.3ms)
+Rendered store/_cart (6.0ms)
+Completed in 19ms (View: 8, DB: 3) | 200 OK [http://localhost/store/add_to_cart/6]
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#checkout (for 127.0.0.1 at 2010-05-04 13:55:00) [POST]
+  Parameters: {"authenticity_token"=>"Darrb2RgkZVZ2busnWGs7dN4GVN3cQd3MZRcPB14mkw="}
+  [4;35;1mOrder Columns (1.9ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+Rendering template within layouts/store
+Rendering store/checkout
+  [4;36;1mProduct Columns (1.9ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart_item (8.4ms)
+Rendered store/_cart_item (0.6ms)
+Rendered store/_cart_item (45.9ms)
+Rendered store/_cart (57.2ms)
+Completed in 142ms (View: 97, DB: 4) | 200 OK [http://localhost/store/checkout]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 13:55:00) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.2ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2010-05-04 13:55:05) [POST]
+  Parameters: {"commit"=>"Place Order", "order"=>{"name"=>"", "pay_type"=>"", "address"=>"", "email"=>""}, "authenticity_token"=>"Darrb2RgkZVZ2busnWGs7dN4GVN3cQd3MZRcPB14mkw="}
+  [4;35;1mOrder Columns (2.3ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mLineItem Columns (1.7ms)[0m   [0;1mSHOW FIELDS FROM `line_items`[0m
+  [4;35;1mProduct Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+Rendering template within layouts/store
+Rendering store/checkout
+Rendered store/_cart_item (0.4ms)
+Rendered store/_cart_item (0.3ms)
+Rendered store/_cart_item (0.3ms)
+Rendered store/_cart (2.9ms)
+Completed in 73ms (View: 21, DB: 7) | 200 OK [http://localhost/store/save_order]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 13:55:05) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2010-05-04 13:55:08) [POST]
+  Parameters: {"commit"=>"Place Order", "order"=>{"name"=>"", "pay_type"=>"", "address"=>"", "email"=>""}, "authenticity_token"=>"Darrb2RgkZVZ2busnWGs7dN4GVN3cQd3MZRcPB14mkw="}
+  [4;36;1mOrder Columns (2.2ms)[0m   [0;1mSHOW FIELDS FROM `orders`[0m
+  [4;35;1mLineItem Columns (1.7ms)[0m   [0mSHOW FIELDS FROM `line_items`[0m
+  [4;36;1mProduct Columns (2.4ms)[0m   [0;1mSHOW FIELDS FROM `products`[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mROLLBACK[0m
+Rendering template within layouts/store
+Rendering store/checkout
+Rendered store/_cart_item (0.4ms)
+Rendered store/_cart_item (0.3ms)
+Rendered store/_cart_item (0.3ms)
+Rendered store/_cart (2.9ms)
+Completed in 59ms (View: 21, DB: 8) | 200 OK [http://localhost/store/save_order]
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 13:55:08) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.1ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#save_order (for 127.0.0.1 at 2010-05-04 13:55:18) [POST]
+  Parameters: {"commit"=>"Place Order", "order"=>{"name"=>"d", "pay_type"=>"check", "address"=>"d", "email"=>"d"}, "authenticity_token"=>"Darrb2RgkZVZ2busnWGs7dN4GVN3cQd3MZRcPB14mkw="}
+  [4;35;1mOrder Columns (2.0ms)[0m   [0mSHOW FIELDS FROM `orders`[0m
+  [4;36;1mLineItem Columns (1.4ms)[0m   [0;1mSHOW FIELDS FROM `line_items`[0m
+  [4;35;1mProduct Columns (1.2ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mCOMMIT[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mBEGIN[0m
+  [4;35;1mOrder Create (0.2ms)[0m   [0mINSERT INTO `orders` (`name`, `pay_type`, `address`, `email`) VALUES('d', 'check', 'd', 'd')[0m
+  [4;36;1mLineItem Create (0.2ms)[0m   [0;1mINSERT INTO `line_items` (`order_id`, `total_price`, `product_id`, `quantity`) VALUES(3, 224.68, 6, 2)[0m
+  [4;35;1mLineItem Create (0.1ms)[0m   [0mINSERT INTO `line_items` (`order_id`, `total_price`, `product_id`, `quantity`) VALUES(3, 500.0, 4, 1)[0m
+  [4;36;1mLineItem Create (0.1ms)[0m   [0;1mINSERT INTO `line_items` (`order_id`, `total_price`, `product_id`, `quantity`) VALUES(3, 11.0, 5, 1)[0m
+  [4;35;1mSQL (0.7ms)[0m   [0mCOMMIT[0m
+Redirected to http://localhost:3000/store
+Completed in 30ms (DB: 7) | 302 Found [http://localhost/store/save_order]
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing StoreController#index (for 127.0.0.1 at 2010-05-04 13:55:18) [GET]
+  [4;36;1mProduct Load (0.4ms)[0m   [0;1mSELECT * FROM `products` ORDER BY title[0m
+Rendering template within layouts/store
+Rendering store/index
+  [4;35;1mProduct Columns (1.4ms)[0m   [0mSHOW FIELDS FROM `products`[0m
+Rendered store/_cart (1.6ms)
+Completed in 27ms (View: 19, DB: 2) | 200 OK [http://localhost/store]
+  [4;36;1mSQL (0.4ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+DEPRECATION WARNING: Disabling sessions for a single controller has been deprecated. Sessions are now lazy loaded. So if you don't access them, consider them off. You can still modify the session cookie options with request.session_options.. (called from /Users/Bradley/work/depot/app/controllers/application_controller.rb:6)
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-05-04 13:55:18) [GET]
+
+ActionController::RoutingError (No route matches "/images/logo.png" with {:method=>:get}):
+  
+
+Rendering rescues/layout (not_found)
