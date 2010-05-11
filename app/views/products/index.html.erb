@@ -16,9 +16,9 @@
     <td><%=h product.price %></td>
    
     <td class="list-actions">
-    <%#= link_to 'Show', product %><br />
+    <%= link_to 'Show', product %><br />
     <%= link_to 'Edit', edit_product_path(product) %><br />
-    <%= link_to 'Destroy', delete_product_path(product), :confirm => 'Are you sure?', :method => :delete %></td>
+    <%= link_to 'Destroy', product, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

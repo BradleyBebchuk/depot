@@ -8,12 +8,12 @@
 <body id="admin">
   <div id="banner">
     <%= image_tag("logo.png") %>
-    <%= @page_title || "Pragmatic Bookshelf" %>
+    <%= @page_title || "Recursive Awesome Online Store" %>
   </div>
   <div id="columns">
     <div id="side">
       <p>
-        <%= link_to "Products",   :controller => 'admin', :action => 'index' %>
+        <%= link_to "Products",   :controller => 'admin', :action => 'list' %>
       </p>
       <p>
         <%= link_to "List users", :controller => 'login', :action => 'list_users' %>

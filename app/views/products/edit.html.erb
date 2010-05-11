@@ -1,6 +1,6 @@
 <h1>Editing product</h1>
 
-<% form_for(@product, :url => update_product_path(@product), :html => { :method => :put }) do |f| %>
+<% form_for(@product) do |f| %>
   <%= f.error_messages %>
 
   <p>

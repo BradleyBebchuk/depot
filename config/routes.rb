@@ -1,6 +1,13 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :products
-
+  
+  map.products '/admin/list', :controller => 'admin', :action => 'create', :conditions => { :method => :post }
+  map.products '/admin/list', :controller => 'admin', :action => 'list', :conditions => { :method => :get }
+  map.delete_product '/admin/edit/:id', :controller => 'admin', :action => 'destroy', :conditions => { :method => :delete }
+  map.update_product '/admin/edit/:id', :controller => 'admin', :action => 'update', :conditions => { :method => :put }
+  map.product '/admin/show/:id', :controller => 'admin', :action => 'show', :conditions => { :method => :get }
+  map.edit_product '/admin/edit/:id', :controller => 'admin', :action => 'edit', :conditions => { :method => :get }
+  map.new_product '/admin/new/', :controller => 'admin', :action => 'new', :conditions => { :method => :get }  
+   
   # The priority is based upon order of creation: first created -> highest priority.
 
   # Sample of regular route:

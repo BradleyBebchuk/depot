@@ -1,5 +1,4 @@
 class AdminController < ApplicationController
-
   before_filter :authorize
   
   # ....
@@ -23,14 +22,15 @@ class AdminController < ApplicationController
   end
 
   def create
-    @product = Product.new(params[:product])
-    if @product.save
-      flash[:notice] = 'Product was successfully created.'
-      redirect_to :action => 'list'
-    else
-      render :action => 'new'
-    end
+      @product = Product.new(params[:product])
+      if @product.save
+        flash[:notice] = 'Product was successfully created.'
+        redirect_to :action => 'list'
+      else
+        render :action => 'new'
+      end
   end
+  
 
   def edit
     @product = Product.find(params[:id])
